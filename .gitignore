@@ -1,0 +1,8 @@
+bin/
+obj/
+_out/
+_probe/
+_chk/
+_chk2/
+*.log
+PB_DEMO_PROJ/BUILD_OUTPUT/

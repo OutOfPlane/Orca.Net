@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      pborc.dll is a 32-bit (x86) native DLL, so this assembly must run in a 32-bit
+      process. x86 is therefore pinned here; AnyCPU would crash with
+      BadImageFormatException on the first P/Invoke.
+    -->
+    <TargetFramework>net8.0</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <AssemblyName>Orca</AssemblyName>
+    <RootNamespace>Orca</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+</Project>
